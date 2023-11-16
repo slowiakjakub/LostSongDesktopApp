@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LostSongDesktopApp", "LostSongDesktopApp\LostSongDesktopApp.csproj", "{E93937D5-A129-42DE-9898-4DE659F76285}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LostSongDesktopAppBackend", "LostSongDesktopAppBackend\LostSongDesktopAppBackend.csproj", "{B466CD7C-04F9-4D79-ACDA-003F8470B631}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E93937D5-A129-42DE-9898-4DE659F76285}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E93937D5-A129-42DE-9898-4DE659F76285}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E93937D5-A129-42DE-9898-4DE659F76285}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B466CD7C-04F9-4D79-ACDA-003F8470B631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B466CD7C-04F9-4D79-ACDA-003F8470B631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B466CD7C-04F9-4D79-ACDA-003F8470B631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B466CD7C-04F9-4D79-ACDA-003F8470B631}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
