@@ -63,6 +63,9 @@
     <Compile Include="AudioProcessing\NAudioDecoder.cs" />
     <Compile Include="DataAccess\FileProcessor.cs" />
     <Compile Include="DataAccess\FileTagger.cs" />
+    <Compile Include="DataAccess\IFileTagger.cs" />
+    <Compile Include="Exceptions\AudioTooShortException.cs" />
+    <Compile Include="Exceptions\ResultsArrayEmptyException.cs" />
     <Compile Include="FingerprintProcessor.cs" />
     <Compile Include="Models\ArtistModel.cs" />
     <Compile Include="Models\DateModel.cs" />
@@ -73,6 +76,7 @@
     <Compile Include="Models\RecordingModel.cs" />
     <Compile Include="Models\ReleaseGroupModel.cs" />
     <Compile Include="Models\ReleaseModel.cs" />
+    <Compile Include="MusicRecognizer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

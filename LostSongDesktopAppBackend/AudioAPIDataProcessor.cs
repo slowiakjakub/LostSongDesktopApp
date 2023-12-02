@@ -20,19 +20,24 @@ namespace LostSongDesktopAppBackend
         /// <returns>Information about audio stored in data models</returns>
         public static async Task<LookupResponseModel> LoadLookupData(string fingerprint, int duration)
         {
-            string url = $"https://api.acoustid.org/v2/lookup?client={Configuration.ClientKey}&meta=recordings+releasegroups+releases&duration={duration}&fingerprint={fingerprint}";
+            var body = new Dictionary<string, string>();
+            body.Add("client", Configuration.ClientKey);
+            body.Add("fingerprint", fingerprint);
+            body.Add("duration", $"{duration}");
+            var content = new FormUrlEncodedContent(body);
 
-            using (HttpResponseMessage response = await APIHelper.ApiClient.GetAsync(url))
+            string url = $"https://api.acoustid.org/v2/lookup?&meta=recordings+releasegroups+releases";
+
+            using (HttpResponseMessage response = await APIHelper.ApiClient.PostAsync(url, content))
             {
                 if (response.IsSuccessStatusCode)
                 {
                     LookupResponseModel lookupResponse = await response.Content.ReadAsAsync<LookupResponseModel>();
-
                     return lookupResponse;
                 }
                 else
                 {
-                    throw new Exception(response.ReasonPhrase);
+                    throw new HttpRequestException(response.ReasonPhrase);
                 }
             }
         }

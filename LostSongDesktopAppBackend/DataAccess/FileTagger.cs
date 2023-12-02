@@ -7,19 +7,9 @@ using System.Threading.Tasks;
 
 namespace LostSongDesktopAppBackend.DataAccess
 {
-    public class FileTagger
+    public class FileTagger : IFileTagger
     {
-        public string filePath;
-        public LookupResponseModel lookupResponse;
-
-
-        public FileTagger(string filePath, LookupResponseModel lookupResponse)
-        {
-            this.filePath = filePath;
-            this.lookupResponse = lookupResponse;
-        }
-
-        public void TagFile()
+        public void TagFile(string filePath, LookupResponseModel lookupResponse)
         {
             var tfile = TagLib.File.Create(filePath);
 
