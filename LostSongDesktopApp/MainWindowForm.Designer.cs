@@ -78,7 +78,7 @@
             this.runMusictagButton.Name = "runMusictagButton";
             this.runMusictagButton.Size = new System.Drawing.Size(242, 73);
             this.runMusictagButton.TabIndex = 2;
-            this.runMusictagButton.Text = "Run MusicTag !";
+            this.runMusictagButton.Text = "Run LostSong!";
             this.runMusictagButton.UseVisualStyleBackColor = false;
             this.runMusictagButton.Click += new System.EventHandler(this.runMusictagButton_Click);
             // 
@@ -93,7 +93,7 @@
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(339, 97);
             this.titleLabel.TabIndex = 4;
-            this.titleLabel.Text = "MusicTag";
+            this.titleLabel.Text = "LostSong";
             // 
             // pictureBox1
             // 
@@ -128,7 +128,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(323, 92);
             this.label1.TabIndex = 0;
-            this.label1.Text = "MusicTag";
+            this.label1.Text = "LostSong";
             // 
             // pictureBox2
             // 
