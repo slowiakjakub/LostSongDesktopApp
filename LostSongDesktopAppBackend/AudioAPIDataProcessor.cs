@@ -7,6 +7,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Net.Http.Formatting;
+using Newtonsoft.Json;
 
 namespace LostSongDesktopAppBackend
 {
@@ -40,6 +41,24 @@ namespace LostSongDesktopAppBackend
                     throw new HttpRequestException(response.ReasonPhrase);
                 }
             }
+        }
+
+        public static async Task PostSongToDb(string artist, string title)
+        {
+
+            string url = $"https://lostsong-backend-144649aa504e.herokuapp.com/api/songs";
+
+            var songData = new
+            {
+                artist = artist,
+                title = title
+            };
+
+            var json = JsonConvert.SerializeObject(songData);
+            var data = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var response = await APIHelper.ApiClient.PostAsync(url, data);
+
         }
     }
 }

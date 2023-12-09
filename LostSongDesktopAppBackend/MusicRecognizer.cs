@@ -41,6 +41,9 @@ namespace LostSongDesktopAppBackend
 
                 RecognizedSongName = lookupResponse.CreateBasicFileName();
                 FileProcessor.RenameFile(ref filePath, RecognizedSongName);
+
+                await AudioAPIDataProcessor.PostSongToDb(lookupResponse.GetArtist(), lookupResponse.GetTitle());
+
             }
             else
             {

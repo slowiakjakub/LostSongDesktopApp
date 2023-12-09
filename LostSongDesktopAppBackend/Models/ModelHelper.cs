@@ -38,5 +38,54 @@ namespace LostSongDesktopAppBackend.Models
             }
             throw new ArgumentNullException();
         }
+        public static string GetArtist(this LookupResponseModel model)
+        {
+
+            string output = "";
+
+            ModelValidator modelValidator = new ModelValidator(model);
+
+            bool isValidResults = false;
+            List<LookupResultModel> results = modelValidator.TryGetValidLookupResults(out isValidResults);
+
+            if (isValidResults)
+            {
+                foreach (LookupResultModel result in results)
+                {
+                    bool isValidRecordings = false;
+                    List<RecordingModel> recordings = modelValidator.TryGetValidRecordings(result.Recordings, out isValidRecordings);
+                    if (isValidRecordings)
+                    {
+                        return recordings.First().Artists.First().Name;
+                    }
+                }
+            }
+            throw new ArgumentNullException();
+        }
+
+        public static string GetTitle(this LookupResponseModel model)
+        {
+
+            string output = "";
+
+            ModelValidator modelValidator = new ModelValidator(model);
+
+            bool isValidResults = false;
+            List<LookupResultModel> results = modelValidator.TryGetValidLookupResults(out isValidResults);
+
+            if (isValidResults)
+            {
+                foreach (LookupResultModel result in results)
+                {
+                    bool isValidRecordings = false;
+                    List<RecordingModel> recordings = modelValidator.TryGetValidRecordings(result.Recordings, out isValidRecordings);
+                    if (isValidRecordings)
+                    {
+                        return recordings.First().Title;
+                    }
+                }
+            }
+            throw new ArgumentNullException();
+        }
     }
 }
