@@ -7,20 +7,24 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LostSongDesktopApp", "LostS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LostSongDesktopAppBackend", "LostSongDesktopAppBackend\LostSongDesktopAppBackend.csproj", "{B466CD7C-04F9-4D79-ACDA-003F8470B631}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "LostSongDesktopInstaller", "LostSongDesktopInstaller\LostSongDesktopInstaller.vdproj", "{9A5EF3E5-60C5-47F0-BDB1-F937F2CEA00E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E93937D5-A129-42DE-9898-4DE659F76285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E93937D5-A129-42DE-9898-4DE659F76285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E93937D5-A129-42DE-9898-4DE659F76285}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{E93937D5-A129-42DE-9898-4DE659F76285}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{E93937D5-A129-42DE-9898-4DE659F76285}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E93937D5-A129-42DE-9898-4DE659F76285}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B466CD7C-04F9-4D79-ACDA-003F8470B631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B466CD7C-04F9-4D79-ACDA-003F8470B631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B466CD7C-04F9-4D79-ACDA-003F8470B631}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{B466CD7C-04F9-4D79-ACDA-003F8470B631}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{B466CD7C-04F9-4D79-ACDA-003F8470B631}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B466CD7C-04F9-4D79-ACDA-003F8470B631}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A5EF3E5-60C5-47F0-BDB1-F937F2CEA00E}.Debug|Any CPU.ActiveCfg = Debug
+		{9A5EF3E5-60C5-47F0-BDB1-F937F2CEA00E}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
