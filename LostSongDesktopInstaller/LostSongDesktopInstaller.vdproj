@@ -249,6 +249,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_384B185DE0DB49458BDE571E22E966C6"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_3922B5F1D62E8DCC68D3C23D0B93CBBB"
         "OwnerKey" = "8:_4CDCBC4BDA2F70C5DB65AED831113B50"
         "MsmSig" = "8:_UNDEFINED"
@@ -683,6 +689,12 @@
         {
         "MsmKey" = "8:_A1ED1AB57D4F714CCDA51A5ACC3E5CC8"
         "OwnerKey" = "8:_AA0A00631A304824BBEF508909EA11AC"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A1F15AEBB3464315A07200A176440463"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -3261,6 +3273,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_384B185DE0DB49458BDE571E22E966C6"
+            {
+            "SourcePath" = "8:..\\LostSongDesktopApp\\Resources\\icon.ico"
+            "TargetName" = "8:icon.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_3C32A708BEAA4EB688FD238042F3C1FC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3922B5F1D62E8DCC68D3C23D0B93CBBB"
             {
             "AssemblyRegister" = "3:1"
@@ -5212,6 +5244,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A1F15AEBB3464315A07200A176440463"
+            {
+            "SourcePath" = "8:..\\LostSongDesktopApp\\Resources\\LostSongIcon.png"
+            "TargetName" = "8:LostSongIcon.png"
+            "Tag" = "8:"
+            "Folder" = "8:_3C32A708BEAA4EB688FD238042F3C1FC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A2F1E967E7433308180D18FB264F7F10"
@@ -7267,6 +7319,17 @@
             "Property" = "8:ProgramMenuFolder"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_057AC1E7009B4A28A941E53F48DE3248"
+                    {
+                    "Name" = "8:LostSong"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_1682052A23634FD9BCB40927F19D2313"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
         }
@@ -7406,6 +7469,34 @@
         }
         "Shortcut"
         {
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_11874CD46E3D499ABEB0D14D83C3E3BD"
+            {
+            "Name" = "8:LostSong"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_D5AD573A2B014F44BA89745151DB9DB1"
+            "Folder" = "8:_2BCEA7E064A04864BD939CEBA0A330ED"
+            "WorkingFolder" = "8:_3C32A708BEAA4EB688FD238042F3C1FC"
+            "Icon" = "8:_384B185DE0DB49458BDE571E22E966C6"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_329F73B2E1984C6CA2EECE0FBE7D0526"
+            {
+            "Name" = "8:LostSong"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_D5AD573A2B014F44BA89745151DB9DB1"
+            "Folder" = "8:_057AC1E7009B4A28A941E53F48DE3248"
+            "WorkingFolder" = "8:_3C32A708BEAA4EB688FD238042F3C1FC"
+            "Icon" = "8:_384B185DE0DB49458BDE571E22E966C6"
+            "Feature" = "8:"
+            }
         }
         "UserInterface"
         {
