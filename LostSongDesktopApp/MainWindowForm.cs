@@ -36,13 +36,13 @@ namespace LostSongDesktopApp
                 filePath = ofd.FileName;
                 runMusictagButton.Enabled = true;
                 progressStatusLabel.ForeColor = Color.FromArgb(237, 237, 237);
-                progressStatusLabel.Text = $"Loaded file: {Path.GetFileName(filePath)}";
+                progressStatusLabel.Text = $"Wybrany plik: {Path.GetFileName(filePath)}";
             }
         }
 
         private async void runMusictagButton_Click(object sender, EventArgs e)
         {
-            progressStatusLabel.Text = "Running MusicTag...";
+            progressStatusLabel.Text = "Rozpoznawanie muzyki...";
             runMusictagButton.Enabled = false;
             bool exception = false;
             string songName = "";
@@ -114,20 +114,20 @@ namespace LostSongDesktopApp
         }
         private void MessageBoxSuccess()
         {
-            MessageBox.Show("Your file was sucesfully recognized and renamed!",
-                "Tagging succesful!",
+            MessageBox.Show("Twoja piosenka została odnaleziona!",
+                "Rozpoznanie zakończone!",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
         }
         private void ProgressLabelSuccess(string songName)
         {
             progressStatusLabel.ForeColor = Color.FromArgb(7, 255, 32);
-            progressStatusLabel.Text = $"Recognized song: {songName}!";
+            progressStatusLabel.Text = $"Rozpoznana piosenka: {songName}!";
         }
         private void ProgressLabelFailure()
         {
             progressStatusLabel.ForeColor = Color.FromArgb(255, 7, 7);
-            progressStatusLabel.Text = "Failure: Try to load different file";
+            progressStatusLabel.Text = "Błąd: Spróbuj załadować inny plik.";
         }
     }
 }

@@ -58,7 +58,7 @@
             this.loadFileButton.Name = "loadFileButton";
             this.loadFileButton.Size = new System.Drawing.Size(197, 55);
             this.loadFileButton.TabIndex = 1;
-            this.loadFileButton.Text = "Load File";
+            this.loadFileButton.Text = "Wybierz plik";
             this.loadFileButton.UseVisualStyleBackColor = false;
             this.loadFileButton.Click += new System.EventHandler(this.loadFileButton_Click);
             // 
@@ -72,13 +72,13 @@
             this.runMusictagButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gainsboro;
             this.runMusictagButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
             this.runMusictagButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.runMusictagButton.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.runMusictagButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.runMusictagButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
             this.runMusictagButton.Location = new System.Drawing.Point(136, 363);
             this.runMusictagButton.Name = "runMusictagButton";
             this.runMusictagButton.Size = new System.Drawing.Size(242, 73);
             this.runMusictagButton.TabIndex = 2;
-            this.runMusictagButton.Text = "Run LostSong!";
+            this.runMusictagButton.Text = "Uruchom LostSong!";
             this.runMusictagButton.UseVisualStyleBackColor = false;
             this.runMusictagButton.Click += new System.EventHandler(this.runMusictagButton_Click);
             // 
@@ -91,7 +91,7 @@
             this.titleLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
             this.titleLabel.Location = new System.Drawing.Point(37, 9);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(339, 97);
+            this.titleLabel.Size = new System.Drawing.Size(410, 121);
             this.titleLabel.TabIndex = 4;
             this.titleLabel.Text = "LostSong";
             // 
@@ -126,7 +126,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(237)))), ((int)(((byte)(237)))));
             this.label1.Location = new System.Drawing.Point(40, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(323, 92);
+            this.label1.Size = new System.Drawing.Size(389, 116);
             this.label1.TabIndex = 0;
             this.label1.Text = "LostSong";
             // 
@@ -166,7 +166,7 @@
             // 
             // MainWindowForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
             this.ClientSize = new System.Drawing.Size(514, 546);
@@ -182,7 +182,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.MinimumSize = new System.Drawing.Size(530, 585);
             this.Name = "MainWindowForm";
-            this.Text = "Music Tag";
+            this.Text = "LostSong";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
